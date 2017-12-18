@@ -13,20 +13,20 @@
 <body>
 <nav class="teal" role="navigation">
     <div class="nav-wrapper container">
-        <a id="logo-container" href="index.html" class="brand-logo waves-effect waves-red">
+        <a id="logo-container" href="index.html" class="brand-logo waves-effect waves-red nav-bar-padding">
             <img src="img/logo.png" alt="Jamb Logo" title="Joint Admission And Matriculation Board Logo">
         </a>
-        <ul class="right hide-on-med-and-down">
-            <li class="no-padding">
-                <ul class="collapsible collapsible-accordion">
-                    <li class="bold"><a href="#" class="collapsible-header teal waves-effect waves-red">
-                        <img src="img/avatar9_small.png" alt="Profile" title="Profile">
-                    </a></li>
-                </ul>
-            </li>
-
-        </ul>
-
+        <div class="right"> <!-- Removed "hide-on-med-and-down"
+         here to show below even on smaller screens-->
+            <a href="#" class="waves-effect waves-red dropdown-trigger nav-bar-padding" data-target="profile-action">
+                <img src="img/avatar9_small.png" alt="Profile" title="Profile">
+            </a>
+            <ul id="profile-action" class="dropdown-content">
+                <li><a href="#">My Profile</a> </li>
+                <li><a href="#">Change Password</a></li>
+                <li><a href="#">Logout</a> </li>
+            </ul>
+        </div>
         <ul id="nav-mobile" class="sidenav">
             <li><a href="#">Home</a></li>
         </ul>
