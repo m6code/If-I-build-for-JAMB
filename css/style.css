@@ -23,3 +23,12 @@ nav .nav-bar-padding{
         padding-top: 32px;
     }
 }
+
+.card-arrange{
+    padding-top: 24px;
+}
+.card.small{
+    height: 150px;
+    border-radius: 25px;
+    box-shadow: 5px 8px #d2d2d2
+}
