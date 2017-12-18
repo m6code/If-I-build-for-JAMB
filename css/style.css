@@ -13,6 +13,13 @@
 	font-size: inherit;
 }
 
-nav .brand-logo{
+nav .nav-bar-padding{
     padding-top: 8px;
+}
+
+/*Adjust the logo a little a smaller device screen*/
+@media only screen and (max-width: 993px) {
+    nav .brand-logo{
+        padding-top: 32px;
+    }
 }
